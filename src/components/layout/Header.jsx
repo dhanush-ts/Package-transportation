@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom"
+import { Separator } from "../ui/separator";
 
 export const Header = () => {
 
@@ -21,9 +22,13 @@ export const Header = () => {
         </div>
         <nav className="flex">
             <NavLink to='/' className={(a)=>a.isActive?"my-auto hover:pb-2 hover:transition-all duration-500 mx-2  text-red-600 dark:text-red-400 font-semibold":"my-auto hover:pb-2 hover:transition-all duration-500 mx-2 dark:text-gray-500 "}>Dashboard</NavLink>
+            <Separator orientation="vertical" />
             <NavLink to='/shipment' className={(a)=>a.isActive?"my-auto mx-2 hover:pb-2 hover:transition-all duration-500  text-red-600 dark:text-red-400 font-semibold":"my-auto mx-2 dark:text-gray-500 hover:pb-2 hover:transition-all duration-500"}>Shipment</NavLink>
+            <Separator orientation="vertical" />
             <NavLink to='/vehicle' className={(a)=>a.isActive?"my-auto hover:pb-2 hover:transition-all duration-500 mx-2  text-red-600 dark:text-red-400 font-semibold":"my-auto mx-2 dark:text-gray-500 hover:pb-2 hover:transition-all duration-500"}>Vehicle</NavLink>
+            <Separator orientation="vertical" />
             <NavLink to='/place' className={(a)=>a.isActive?"my-auto hover:pb-2 hover:transition-all duration-500 mx-2  text-red-600 dark:text-red-400 font-semibold":"my-auto mx-2 dark:text-gray-500 hover:pb-2 hover:transition-all duration-500"}>Place</NavLink>
+            <Separator orientation="vertical" />
             <NavLink to='/user' className={(a)=>a.isActive?"my-auto hover:pb-2 hover:transition-all duration-500 mx-2  text-red-600 dark:text-red-400 font-semibold":"my-auto mx-2 dark:text-gray-500 hover:pb-2 hover:transition-all duration-500"}>User</NavLink>
         </nav>
         <div className="mx-5 flex">

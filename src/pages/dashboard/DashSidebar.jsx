@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import React, { useEffect, useState } from 'react';
 
 export const DashSidebar = () => {
-  const [activeTab, setActiveTab] = useState('Profile');
+  const [activeTab, setActiveTab] = useState('Finance');
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -46,7 +46,7 @@ export const DashSidebar = () => {
             className={`w-full px-4 py-3 text-left rounded-lg transition-colors duration-300 ${
               activeTab === 'Finance'
                 ? 'hover:bg-red-600 bg-red-500 text-white' // Active tab in red
-                : 'bg-gray-50 hover:bg-gray-100 text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100'
+                : 'bg-gray-100 hover:bg-gray-200 text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100'
             }`}
           >
             Finance
@@ -58,7 +58,7 @@ export const DashSidebar = () => {
             className={`w-full px-4 py-3 text-left rounded-lg transition-colors duration-300 ${
               activeTab === 'Market'
                 ? 'hover:bg-red-600 bg-red-500 text-white' // Active tab in red
-                : 'bg-gray-50 hover:bg-gray-100 text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100'
+                : 'bg-gray-100 hover:bg-gray-200 text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100'
             }`}
           >
             Market
@@ -70,7 +70,7 @@ export const DashSidebar = () => {
             className={`w-full px-4 py-3 text-left rounded-lg transition-colors duration-300 ${
               activeTab === 'Sales'
                 ? 'hover:bg-red-600 bg-red-500 text-white' // Active tab in red
-                : 'bg-gray-50 hover:bg-gray-100 text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100'
+                : 'bg-gray-100 hover:bg-gray-200 text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100'
             }`}
           >
             Sales
@@ -82,7 +82,7 @@ export const DashSidebar = () => {
             className={`w-full px-4 py-3 text-left rounded-lg transition-colors duration-300 ${
               activeTab === 'Project'
                 ? 'hover:bg-red-600 bg-red-500 text-white' // Active tab in red
-                : 'bg-gray-50 hover:bg-gray-100 text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100'
+                : 'bg-gray-100 hover:bg-gray-200 text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100'
             }`}
           >
             Project Management
@@ -94,14 +94,14 @@ export const DashSidebar = () => {
             className={`w-full px-4 py-3 text-left rounded-lg transition-colors duration-300 ${
               activeTab === 'Customer'
                 ? 'hover:bg-red-600 bg-red-500 text-white' // Active tab in red
-                : 'bg-gray-50 hover:bg-gray-100 text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100'
+                : 'bg-gray-100 hover:bg-gray-200 text-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100'
             }`}
           >
             Customer Support
           </Button>
         </li>
       </ul>
-      <div className="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full transition-colors duration-300">
+      <div className="p-6 bg-gray-100 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full transition-colors duration-300">
         {curDash}
       </div>
     </div>

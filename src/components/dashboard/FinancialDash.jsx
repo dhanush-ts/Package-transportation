@@ -1,7 +1,13 @@
-import React from 'react'
+import { Barchart } from "../charts/finance/Barchart"
+import { LineChart } from "../charts/finance/LineChart"
 
-export const FinancialDash = () => {
+export const FinancialDash = () =>  {
+
   return (
-    <div>FinancialDash podu</div>
+    <div>
+
+      <Barchart />
+      <LineChart />
+    </div>
   )
 }
